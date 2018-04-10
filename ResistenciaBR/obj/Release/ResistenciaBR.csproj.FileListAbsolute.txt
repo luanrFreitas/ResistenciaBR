@@ -1,0 +1,150 @@
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\ApplicationInsights.config
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\ResistenciaBR.dll.config
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\ResistenciaBR.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\ResistenciaBR.pdb
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Antlr3.Runtime.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\EntityFramework.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\EntityFramework.SqlServer.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.AI.Web.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.ApplicationInsights.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.Owin.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.Owin.Security.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Newtonsoft.Json.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Owin.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\System.Web.Helpers.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\System.Web.Mvc.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\System.Web.Optimization.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\System.Web.Razor.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\System.Web.WebPages.Deployment.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\System.Web.WebPages.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\System.Web.WebPages.Razor.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\WebGrease.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\System.Web.Helpers.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\System.Web.Mvc.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\System.Web.Optimization.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\System.Web.Razor.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\System.Web.WebPages.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\System.Web.WebPages.Deployment.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\System.Web.WebPages.Razor.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Antlr3.Runtime.pdb
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Newtonsoft.Json.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\EntityFramework.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\EntityFramework.SqlServer.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.Owin.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.Owin.Security.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.ApplicationInsights.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\bin\Microsoft.AI.Web.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\obj\Release\ResistenciaBR.csprojResolveAssemblyReference.cache
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\obj\Release\ResistenciaBR.csproj.CoreCompileInputs.cache
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\obj\Release\ResistenciaBR.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\obj\Release\ResistenciaBR.pdb
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\obj\Release\ResistenciaBR.Migrations.InitialCreate.resources
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\obj\Release\ResistenciaBR.Migrations.Tips.resources
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\obj\Release\ResistenciaBR.csproj.GenerateResource.Cache
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR\ResistenciaBR\obj\Release\ResistenciaBR.csproj.CopyComplete
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\ApplicationInsights.config
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\ResistenciaBR.dll.config
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\ResistenciaBR.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\ResistenciaBR.pdb
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Antlr3.Runtime.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\EntityFramework.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\EntityFramework.SqlServer.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.AI.Web.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.ApplicationInsights.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.Owin.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.Owin.Security.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Newtonsoft.Json.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Owin.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\System.Web.Helpers.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\System.Web.Mvc.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\System.Web.Optimization.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\System.Web.Razor.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\System.Web.WebPages.Deployment.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\System.Web.WebPages.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\System.Web.WebPages.Razor.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\WebGrease.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\System.Web.Helpers.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\System.Web.Mvc.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\System.Web.Optimization.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\System.Web.Razor.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\System.Web.WebPages.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\System.Web.WebPages.Deployment.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\System.Web.WebPages.Razor.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Antlr3.Runtime.pdb
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Newtonsoft.Json.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\EntityFramework.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\EntityFramework.SqlServer.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.Owin.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.Owin.Security.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.ApplicationInsights.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\bin\Microsoft.AI.Web.xml
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\obj\Release\ResistenciaBR.csprojResolveAssemblyReference.cache
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\obj\Release\ResistenciaBR.Migrations.InitialCreate.resources
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\obj\Release\ResistenciaBR.Migrations.Tips.resources
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\obj\Release\ResistenciaBR.csproj.GenerateResource.cache
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\obj\Release\ResistenciaBR.csproj.CoreCompileInputs.cache
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\obj\Release\ResistenciaBR.csproj.CopyComplete
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\obj\Release\ResistenciaBR.dll
+C:\Users\luan\source\repos\Nova pasta\ResistenciaBR - Copia\ResistenciaBR\obj\Release\ResistenciaBR.pdb

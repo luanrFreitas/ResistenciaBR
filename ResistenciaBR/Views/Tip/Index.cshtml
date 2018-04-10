@@ -1,0 +1,60 @@
+﻿@model IEnumerable<ResistenciaBR.Models.Tip>
+
+@{
+    ViewBag.Title = "Dicas";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Dicas</h2>
+
+<p>
+    @Html.ActionLink("Cadastrar nova", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Categoria)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </th>
+        @*<th>
+                @Html.DisplayNameFor(model => model.Texto)
+            </th>*@
+        <th></th>
+    </tr>
+    <tr>
+        <td>
+            Ferramentas
+        </td>
+        <td>
+            Como se cadastrar no site Swgoh.gg
+        </td>
+        <td>
+            @Html.ActionLink("Detalhar", "swgohgg")
+        </td>
+
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Categoria)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Titulo)
+            </td>
+            @*<td>
+                    @Html.DisplayFor(modelItem => item.Texto)
+                </td>*@
+            <td>
+                @*@Html.ActionLink("Editar", "Edit", new { id=item.Codigo }) |*@
+                @Html.ActionLink("Detalhar", "Details", new { id = item.Codigo })
+                @*@Html.ActionLink("Deletar", "Delete", new { id=item.Codigo })*@
+            </td>
+        </tr>
+    }
+
+
+</table>

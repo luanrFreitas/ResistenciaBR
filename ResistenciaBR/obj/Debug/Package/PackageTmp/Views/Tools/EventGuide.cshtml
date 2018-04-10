@@ -1,0 +1,1206 @@
+﻿@model IEnumerable<ResistenciaBR.Models.Heroi>
+
+@{
+    ViewBag.Title = "Guia de Eventos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Roster Progress Indicator</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="~/Content/agency.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<h2>Guia de Eventos</h2>
+
+
+<section id="event1" class="bg-alt-gray">
+    <div class="container">
+
+        <div class="row event">
+            <div class="col-md-12 col-sm-12 event-summary">
+                <h1 class="section-bar">ARTISTA DA GUERRA</h1>
+
+                <h4 class="section-bar3">Raridade  5*-7* | Equipamento 8-10 | Nível 85</h4>
+            </div>
+        </div>
+
+        <div class="row event">
+            <div class="col-md-4 col-sm-12 portfolio-item">
+                <img src="~/Content/img/events/tex.events_thrawn.jpg" />
+                <h4 class="section-bar">GRANDE ALMIRANTE THRAWN</h4>
+                <p style="background-color:red"></p>
+            </div>
+
+
+
+            <div class="col-md-8 col-sm-12 portfolio-item">
+                <div class="portfolio-caption">
+
+                    <p id="analysis" class="text-muted">
+                        <h4>ESQUADRÃO FÊNIX</h4>
+
+                        <table class="table raidtable rancorraid" align="center">
+                            <tr>
+                                <td>Nome</td>
+                                <td>Raridade</td>
+                                <td>Equipt</td>
+                                <td>Nível</td>
+                            </tr>
+                            <tr>
+                                <td>Chopper</td>
+                                @if (@Model.Where(m => m.Nome == "Chopper").FirstOrDefault() != null)
+                                {
+                                    ResistenciaBR.Services.HeroiService heroiSrv = new ResistenciaBR.Services.HeroiService();
+                                    <td bgcolor="@heroiSrv.BgRaridade(Model.Where(m => m.Nome == "Chopper").FirstOrDefault())">@Model.Where(m => m.Nome == "Chopper").FirstOrDefault().Raridade</td>
+                                    <td bgcolor="@heroiSrv.BgEquipamento(Model.Where(m => m.Nome == "Chopper").FirstOrDefault())">@Model.Where(m => m.Nome == "Chopper").FirstOrDefault().Equipamento</td>
+                                    <td bgcolor="@heroiSrv.BgNivel(Model.Where(m => m.Nome == "Chopper").FirstOrDefault())">@Model.Where(m => m.Nome == "Chopper").FirstOrDefault().Nivel</td>}
+                                else
+                                {
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                }
+
+                            </tr>
+                            <tr>
+                                <td>Ezra Bridger</td>
+                                @if (@Model.Where(m => m.Nome == "Ezra Bridger").Count() > 0)
+                                {
+                                    ResistenciaBR.Services.HeroiService heroiSrv = new ResistenciaBR.Services.HeroiService();
+                                    <td bgcolor="@heroiSrv.BgRaridade(Model.Where(m => m.Nome == "Ezra Bridger").FirstOrDefault())">@Model.Where(m => m.Nome == "Ezra Bridger").FirstOrDefault().Raridade</td>
+                                    <td bgcolor="@heroiSrv.BgEquipamento(Model.Where(m => m.Nome == "Ezra Bridger").FirstOrDefault())">@Model.Where(m => m.Nome == "Ezra Bridger").FirstOrDefault().Equipamento</td>
+                                    <td bgcolor="@heroiSrv.BgNivel(Model.Where(m => m.Nome == "Ezra Bridger").FirstOrDefault())">@Model.Where(m => m.Nome == "Ezra Bridger").FirstOrDefault().Nivel</td>}
+                                else
+                                {
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                }
+                            </tr>
+                            <tr>
+                                <td>Garazeb "Zeb" Orrelios</td>
+                                @if (@Model.Where(m => m.Nome == "Garazeb Zeb Orrelios").Count() > 0)
+                                {
+                                    ResistenciaBR.Services.HeroiService heroiSrv = new ResistenciaBR.Services.HeroiService();
+                                    <td bgcolor="@heroiSrv.BgRaridade(Model.Where(m => m.Nome == "Garazeb Zeb Orrelios").FirstOrDefault())">@Model.Where(m => m.Nome == "Garazeb Zeb Orrelios").FirstOrDefault().Raridade</td>
+                                    <td bgcolor="@heroiSrv.BgEquipamento(Model.Where(m => m.Nome == "Garazeb Zeb Orrelios").FirstOrDefault())">@Model.Where(m => m.Nome == "Garazeb Zeb Orrelios").FirstOrDefault().Equipamento</td>
+                                    <td bgcolor="@heroiSrv.BgNivel(Model.Where(m => m.Nome == "Garazeb Zeb Orrelios").FirstOrDefault())">@Model.Where(m => m.Nome == "Garazeb Zeb Orrelios").FirstOrDefault().Nivel</td>}
+                                else
+                                {
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                }
+                            </tr>
+                            <tr>
+                                <td>Hera Syndulla</td>
+                                @if (@Model.Where(m => m.Nome == "Hera Syndulla").Count() > 0)
+                                {
+                                    ResistenciaBR.Services.HeroiService heroiSrv = new ResistenciaBR.Services.HeroiService();
+                                    <td bgcolor="@heroiSrv.BgRaridade(Model.Where(m => m.Nome == "Hera Syndulla").FirstOrDefault())">@Model.Where(m => m.Nome == "Hera Syndulla").FirstOrDefault().Raridade</td>
+                                    <td bgcolor="@heroiSrv.BgEquipamento(Model.Where(m => m.Nome == "Hera Syndulla").FirstOrDefault())">@Model.Where(m => m.Nome == "Hera Syndulla").FirstOrDefault().Equipamento</td>
+                                    <td bgcolor="@heroiSrv.BgNivel(Model.Where(m => m.Nome == "Hera Syndulla").FirstOrDefault())">@Model.Where(m => m.Nome == "Hera Syndulla").FirstOrDefault().Nivel</td>}
+                                else
+                                {
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                }
+                            </tr>
+                            <tr>
+                                <td>Kanan Jarrus</td>
+                                @if (@Model.Where(m => m.Nome == "Kanan Jarrus").Count() > 0)
+                                {
+                                    ResistenciaBR.Services.HeroiService heroiSrv = new ResistenciaBR.Services.HeroiService();
+                                    <td bgcolor="@heroiSrv.BgRaridade(Model.Where(m => m.Nome == "Kanan Jarrus").FirstOrDefault())">@Model.Where(m => m.Nome == "Kanan Jarrus").FirstOrDefault().Raridade</td>
+                                    <td bgcolor="@heroiSrv.BgEquipamento(Model.Where(m => m.Nome == "Kanan Jarrus").FirstOrDefault())">@Model.Where(m => m.Nome == "Kanan Jarrus").FirstOrDefault().Equipamento</td>
+                                    <td bgcolor="@heroiSrv.BgNivel(Model.Where(m => m.Nome == "Kanan Jarrus").FirstOrDefault())">@Model.Where(m => m.Nome == "Kanan Jarrus").FirstOrDefault().Nivel</td>}
+                                else
+                                {
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                }
+                            </tr>
+                            <tr>
+                                <td>Sabine Wren</td>
+                                @if (@Model.Where(m => m.Nome == "Sabine Wren").Count() > 0)
+                                {
+                                    ResistenciaBR.Services.HeroiService heroiSrv = new ResistenciaBR.Services.HeroiService();
+                                    <td bgcolor="@heroiSrv.BgRaridade(Model.Where(m => m.Nome == "Sabine Wren").FirstOrDefault())">@Model.Where(m => m.Nome == "Sabine Wren").FirstOrDefault().Raridade</td>
+                                    <td bgcolor="@heroiSrv.BgEquipamento(Model.Where(m => m.Nome == "Sabine Wren").FirstOrDefault())">@Model.Where(m => m.Nome == "Sabine Wren").FirstOrDefault().Equipamento</td>
+                                    <td bgcolor="@heroiSrv.BgNivel(Model.Where(m => m.Nome == "Sabine Wren").FirstOrDefault())">@Model.Where(m => m.Nome == "Sabine Wren").FirstOrDefault().Nivel</td>}
+                                else
+                                {
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                }
+                            </tr>
+                        </table>
+                    </p>
+                    @Html.Partial("_LegandaPartial")
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+</section>
+
+<!-- Event -->
+<section id="event3" class="bg-alt-gray">
+    <div class="container">
+
+        <div class="row event">
+            <div class="col-md-12 col-sm-12 event-summary">
+                <h1 class="section-bar">TREINAMENTO DO GRANDE MESTRE</h1>
+
+                <h4 class="section-bar3">Raridade 7* | Equipamento 8-9 | Nível 80</h4>
+            </div>
+        </div>
+
+        <div class="row event">
+            <div class="col-md-4 col-sm-12 portfolio-item">
+                <img src="~/Content/img/events/tex.events_yoda.jpg" />
+                <h4 class="section-bar">YODA</h4>
+                <p style="background-color:red"></p>
+            </div>
+
+
+
+            <div class="col-md-8 col-sm-12 portfolio-item">
+                <div class="portfolio-caption">
+
+                    <p id="analysis" class="text-muted">
+                        <h4>JEDI</h4>
+
+                        <table class="table raidtable rancorraid" align="center">
+                            <tr>
+                                <td>Nome</td>
+                                <td>Raridade</td>
+                                <td>Equipt</td>
+                                <td>Nível</td>
+                            </tr>
+                            <tr>
+                                <td>Aayla Secura</td>
+                                @if (@Model.Where(m => m.Nome == "Aayla Secura").Count() > 0)
+                                {
+                                    ResistenciaBR.Services.HeroiService heroiSrv = new ResistenciaBR.Services.HeroiService();
+                                    <td bgcolor="@heroiSrv.BgRaridade(Model.Where(m => m.Nome == "Aayla Secura").FirstOrDefault())">@Model.Where(m => m.Nome == "Aayla Secura").FirstOrDefault().Raridade</td>
+                                    <td bgcolor="@heroiSrv.BgEquipamento(Model.Where(m => m.Nome == "Aayla Secura").FirstOrDefault())">@Model.Where(m => m.Nome == "Aayla Secura").FirstOrDefault().Equipamento</td>
+                                    <td bgcolor="@heroiSrv.BgNivel(Model.Where(m => m.Nome == "Aayla Secura").FirstOrDefault())">@Model.Where(m => m.Nome == "Aayla Secura").FirstOrDefault().Nivel</td>}
+                                else
+                                {
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                }
+                            </tr>
+                            <tr>
+                                <td>Ahsoka Tano</td>
+                                @if (@Model.Where(m => m.Nome == "Ahsoka Tano").Count() > 0)
+                                {
+                                    ResistenciaBR.Services.HeroiService heroiSrv = new ResistenciaBR.Services.HeroiService();
+                                    <td bgcolor="@heroiSrv.BgRaridade(Model.Where(m => m.Nome == "Ahsoka Tano").FirstOrDefault())">@Model.Where(m => m.Nome == "Ahsoka Tano").FirstOrDefault().Raridade</td>
+                                    <td bgcolor="@heroiSrv.BgEquipamento(Model.Where(m => m.Nome == "Ahsoka Tano").FirstOrDefault())">@Model.Where(m => m.Nome == "Ahsoka Tano").FirstOrDefault().Equipamento</td>
+                                    <td bgcolor="@heroiSrv.BgNivel(Model.Where(m => m.Nome == "Ahsoka Tano").FirstOrDefault())">@Model.Where(m => m.Nome == "Ahsoka Tano").FirstOrDefault().Nivel</td>}
+                                else
+                                {
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                }
+                            </tr>
+                            <tr>
+                                <td>Barriss Offee</td>
+                                @if (@Model.Where(m => m.Nome == "Barriss Offee").Count() > 0)
+                                {
+                                    ResistenciaBR.Services.HeroiService heroiSrv = new ResistenciaBR.Services.HeroiService();
+                                    <td bgcolor="@heroiSrv.BgRaridade(Model.Where(m => m.Nome == "Barriss Offee").FirstOrDefault())">@Model.Where(m => m.Nome == "Barriss Offee").FirstOrDefault().Raridade</td>
+                                    <td bgcolor="@heroiSrv.BgEquipamento(Model.Where(m => m.Nome == "Barriss Offee").FirstOrDefault())">@Model.Where(m => m.Nome == "Barriss Offee").FirstOrDefault().Equipamento</td>
+                                    <td bgcolor="@heroiSrv.BgNivel(Model.Where(m => m.Nome == "Barriss Offee").FirstOrDefault())">@Model.Where(m => m.Nome == "Barriss Offee").FirstOrDefault().Nivel</td>}
+                                else
+                                {
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                }
+                            </tr>
+                            <tr>
+                                <td>Eeth Koth</td>
+                                @if (@Model.Where(m => m.Nome == "Eeth Koth").Count() > 0)
+                                {
+                                    ResistenciaBR.Services.HeroiService heroiSrv = new ResistenciaBR.Services.HeroiService();
+                                    <td bgcolor="@heroiSrv.BgRaridade(Model.Where(m => m.Nome == "Eeth Koth").FirstOrDefault())">@Model.Where(m => m.Nome == "Eeth Koth").FirstOrDefault().Raridade</td>
+                                    <td bgcolor="@heroiSrv.BgEquipamento(Model.Where(m => m.Nome == "Eeth Koth").FirstOrDefault())">@Model.Where(m => m.Nome == "Eeth Koth").FirstOrDefault().Equipamento</td>
+                                    <td bgcolor="@heroiSrv.BgNivel(Model.Where(m => m.Nome == "Eeth Koth").FirstOrDefault())">@Model.Where(m => m.Nome == "Eeth Koth").FirstOrDefault().Nivel</td>}
+                                else
+                                {
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                }
+                            </tr>
+                            <tr>
+                                <td>Ezra Bridger</td>
+                                @if (@Model.Where(m => m.Nome == "Ezra Bridger").Count() > 0)
+                                {
+                                    ResistenciaBR.Services.HeroiService heroiSrv = new ResistenciaBR.Services.HeroiService();
+                                    <td bgcolor="@heroiSrv.BgRaridade(Model.Where(m => m.Nome == "Ezra Bridger").FirstOrDefault())">@Model.Where(m => m.Nome == "Ezra Bridger").FirstOrDefault().Raridade</td>
+                                    <td bgcolor="@heroiSrv.BgEquipamento(Model.Where(m => m.Nome == "Ezra Bridger").FirstOrDefault())">@Model.Where(m => m.Nome == "Ezra Bridger").FirstOrDefault().Equipamento</td>
+                                    <td bgcolor="@heroiSrv.BgNivel(Model.Where(m => m.Nome == "Ezra Bridger").FirstOrDefault())">@Model.Where(m => m.Nome == "Ezra Bridger").FirstOrDefault().Nivel</td>}
+                                else
+                                {
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                }
+                            </tr>
+                            <tr>
+                                <td>General Kenobi</td>
+                                @if (@Model.Where(m => m.Nome == "General Kenobi").Count() > 0)
+                                {
+                                    ResistenciaBR.Services.HeroiService heroiSrv = new ResistenciaBR.Services.HeroiService();
+                                    <td bgcolor="@heroiSrv.BgRaridade(Model.Where(m => m.Nome == "General Kenobi").FirstOrDefault())">@Model.Where(m => m.Nome == "General Kenobi").FirstOrDefault().Raridade</td>
+                                    <td bgcolor="@heroiSrv.BgEquipamento(Model.Where(m => m.Nome == "General Kenobi").FirstOrDefault())">@Model.Where(m => m.Nome == "General Kenobi").FirstOrDefault().Equipamento</td>
+                                    <td bgcolor="@heroiSrv.BgNivel(Model.Where(m => m.Nome == "General Kenobi").FirstOrDefault())">@Model.Where(m => m.Nome == "General Kenobi").FirstOrDefault().Nivel</td>}
+                                else
+                                {
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                }
+                            </tr>
+                            <tr>
+                                <td>Yoda Ermitão</td>
+                                @if (@Model.Where(m => m.Nome == "Hermit Yoda").Count() > 0)
+                                {
+                                    ResistenciaBR.Services.HeroiService heroiSrv = new ResistenciaBR.Services.HeroiService();
+                                    <td bgcolor="@heroiSrv.BgRaridade(Model.Where(m => m.Nome == "Hermit Yoda").FirstOrDefault())">@Model.Where(m => m.Nome == "Hermit Yoda").FirstOrDefault().Raridade</td>
+                                    <td bgcolor="@heroiSrv.BgEquipamento(Model.Where(m => m.Nome == "Hermit Yoda").FirstOrDefault())">@Model.Where(m => m.Nome == "Hermit Yoda").FirstOrDefault().Equipamento</td>
+                                    <td bgcolor="@heroiSrv.BgNivel(Model.Where(m => m.Nome == "Hermit Yoda").FirstOrDefault())">@Model.Where(m => m.Nome == "Hermit Yoda").FirstOrDefault().Nivel</td>}
+                                else
+                                {
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                }
+                            </tr>
+                            <tr>
+                                <td>Ima-Gun Di</td>
+                                 @if (@Model.Where(m => m.Nome == "Ima-Gun Di").Count() > 0)
+                                {
+                                    ResistenciaBR.Services.HeroiService heroiSrv = new ResistenciaBR.Services.HeroiService();
+                                    <td bgcolor="@heroiSrv.BgRaridade(Model.Where(m => m.Nome == "Ima-Gun Di").FirstOrDefault())">@Model.Where(m => m.Nome == "Ima-Gun Di").FirstOrDefault().Raridade</td>
+                                    <td bgcolor="@heroiSrv.BgEquipamento(Model.Where(m => m.Nome == "Ima-Gun Di").FirstOrDefault())">@Model.Where(m => m.Nome == "Ima-Gun Di").FirstOrDefault().Equipamento</td>
+                                    <td bgcolor="@heroiSrv.BgNivel(Model.Where(m => m.Nome == "Ima-Gun Di").FirstOrDefault())">@Model.Where(m => m.Nome == "Ima-Gun Di").FirstOrDefault().Nivel</td>}
+                                else
+                                {
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                }
+                            </tr>
+                            <tr>
+                                <td>Cônsul Jedi</td>
+                                @if (@Model.Where(m => m.Nome == "Jedi Consular").Count() > 0)
+                                {
+                                    ResistenciaBR.Services.HeroiService heroiSrv = new ResistenciaBR.Services.HeroiService();
+                                    <td bgcolor="@heroiSrv.BgRaridade(Model.Where(m => m.Nome == "Jedi Consular").FirstOrDefault())">@Model.Where(m => m.Nome == "Jedi Consular").FirstOrDefault().Raridade</td>
+                                    <td bgcolor="@heroiSrv.BgEquipamento(Model.Where(m => m.Nome == "Jedi Consular").FirstOrDefault())">@Model.Where(m => m.Nome == "Jedi Consular").FirstOrDefault().Equipamento</td>
+                                    <td bgcolor="@heroiSrv.BgNivel(Model.Where(m => m.Nome == "Jedi Consular").FirstOrDefault())">@Model.Where(m => m.Nome == "Jedi Consular").FirstOrDefault().Nivel</td>}
+                                else
+                                {
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                }
+                            </tr>
+                            <tr>
+                                <td>Anakin Cavaleiro Jedi</td>
+                                @if (@Model.Where(m => m.Nome == "Jedi Knight Anakin").Count() > 0)
+                                {
+                                    ResistenciaBR.Services.HeroiService heroiSrv = new ResistenciaBR.Services.HeroiService();
+                                    <td bgcolor="@heroiSrv.BgRaridade(Model.Where(m => m.Nome == "Jedi Knight Anakin").FirstOrDefault())">@Model.Where(m => m.Nome == "Jedi Knight Anakin").FirstOrDefault().Raridade</td>
+                                    <td bgcolor="@heroiSrv.BgEquipamento(Model.Where(m => m.Nome == "Jedi Knight Anakin").FirstOrDefault())">@Model.Where(m => m.Nome == "Jedi Knight Anakin").FirstOrDefault().Equipamento</td>
+                                    <td bgcolor="@heroiSrv.BgNivel(Model.Where(m => m.Nome == "Jedi Knight Anakin").FirstOrDefault())">@Model.Where(m => m.Nome == "Jedi Knight Anakin").FirstOrDefault().Nivel</td>}
+                                else
+                                {
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                }
+                            </tr>
+                            <tr>
+                                <td>Cavaleiro Jedi Guardião</td>
+                                @if (@Model.Where(m => m.Nome == "Jedi Knight Guardian").Count() > 0)
+                                {
+                                    ResistenciaBR.Services.HeroiService heroiSrv = new ResistenciaBR.Services.HeroiService();
+                                    <td bgcolor="@heroiSrv.BgRaridade(Model.Where(m => m.Nome == "Jedi Knight Guardian").FirstOrDefault())">@Model.Where(m => m.Nome == "Jedi Knight Guardian").FirstOrDefault().Raridade</td>
+                                    <td bgcolor="@heroiSrv.BgEquipamento(Model.Where(m => m.Nome == "Jedi Knight Guardian").FirstOrDefault())">@Model.Where(m => m.Nome == "Jedi Knight Guardian").FirstOrDefault().Equipamento</td>
+                                    <td bgcolor="@heroiSrv.BgNivel(Model.Where(m => m.Nome == "Jedi Knight Guardian").FirstOrDefault())">@Model.Where(m => m.Nome == "Jedi Knight Guardian").FirstOrDefault().Nivel</td>}
+                                else
+                                {
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                }
+                            </tr>
+                            <tr>
+                                <td>Kanan Jarrus</td>
+                                @if (@Model.Where(m => m.Nome == "Kanan Jarrus").Count() > 0)
+                                {
+                                    ResistenciaBR.Services.HeroiService heroiSrv = new ResistenciaBR.Services.HeroiService();
+                                    <td bgcolor="@heroiSrv.BgRaridade(Model.Where(m => m.Nome == "Kanan Jarrus").FirstOrDefault())">@Model.Where(m => m.Nome == "Kanan Jarrus").FirstOrDefault().Raridade</td>
+                                    <td bgcolor="@heroiSrv.BgEquipamento(Model.Where(m => m.Nome == "Kanan Jarrus").FirstOrDefault())">@Model.Where(m => m.Nome == "Kanan Jarrus").FirstOrDefault().Equipamento</td>
+                                    <td bgcolor="@heroiSrv.BgNivel(Model.Where(m => m.Nome == "Kanan Jarrus").FirstOrDefault())">@Model.Where(m => m.Nome == "Kanan Jarrus").FirstOrDefault().Nivel</td>}
+                                else
+                                {
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                }
+                            </tr>
+                            <tr>
+                                <td>Kit Fisto</td>
+                                @if (@Model.Where(m => m.Nome == "Kit Fisto").Count() > 0)
+                                {
+                                    ResistenciaBR.Services.HeroiService heroiSrv = new ResistenciaBR.Services.HeroiService();
+                                    <td bgcolor="@heroiSrv.BgRaridade(Model.Where(m => m.Nome == "Kit Fisto").FirstOrDefault())">@Model.Where(m => m.Nome == "Kit Fisto").FirstOrDefault().Raridade</td>
+                                    <td bgcolor="@heroiSrv.BgEquipamento(Model.Where(m => m.Nome == "Kit Fisto").FirstOrDefault())">@Model.Where(m => m.Nome == "Kit Fisto").FirstOrDefault().Equipamento</td>
+                                    <td bgcolor="@heroiSrv.BgNivel(Model.Where(m => m.Nome == "Kit Fisto").FirstOrDefault())">@Model.Where(m => m.Nome == "Kit Fisto").FirstOrDefault().Nivel</td>}
+                                else
+                                {
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                }
+                            </tr>
+                            <tr>
+                                <td>Luminara Unduli</td>
+                                @if (@Model.Where(m => m.Nome == "Luminara Unduli").Count() > 0)
+                                {
+                                    ResistenciaBR.Services.HeroiService heroiSrv = new ResistenciaBR.Services.HeroiService();
+                                    <td bgcolor="@heroiSrv.BgRaridade(Model.Where(m => m.Nome == "Luminara Unduli").FirstOrDefault())">@Model.Where(m => m.Nome == "Luminara Unduli").FirstOrDefault().Raridade</td>
+                                    <td bgcolor="@heroiSrv.BgEquipamento(Model.Where(m => m.Nome == "Luminara Unduli").FirstOrDefault())">@Model.Where(m => m.Nome == "Luminara Unduli").FirstOrDefault().Equipamento</td>
+                                    <td bgcolor="@heroiSrv.BgNivel(Model.Where(m => m.Nome == "Luminara Unduli").FirstOrDefault())">@Model.Where(m => m.Nome == "Luminara Unduli").FirstOrDefault().Nivel</td>}
+                                else
+                                {
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                }
+                            </tr>
+                            <tr>
+                                <td>Mace Windu</td>
+                                @if (@Model.Where(m => m.Nome == "Mace Windu").Count() > 0)
+                                {
+                                    ResistenciaBR.Services.HeroiService heroiSrv = new ResistenciaBR.Services.HeroiService();
+                                    <td bgcolor="@heroiSrv.BgRaridade(Model.Where(m => m.Nome == "Mace Windu").FirstOrDefault())">@Model.Where(m => m.Nome == "Mace Windu").FirstOrDefault().Raridade</td>
+                                    <td bgcolor="@heroiSrv.BgEquipamento(Model.Where(m => m.Nome == "Mace Windu").FirstOrDefault())">@Model.Where(m => m.Nome == "Mace Windu").FirstOrDefault().Equipamento</td>
+                                    <td bgcolor="@heroiSrv.BgNivel(Model.Where(m => m.Nome == "Mace Windu").FirstOrDefault())">@Model.Where(m => m.Nome == "Mace Windu").FirstOrDefault().Nivel</td>}
+                                else
+                                {
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                }
+                            </tr>
+                            <tr>
+                                <td>Obi-Wan Kenobi (Velho Ben)</td>
+                                @if (@Model.Where(m => m.Nome == "Obi-Wan Kenobi (Old Ben)").Count() > 0)
+                                {
+                                    ResistenciaBR.Services.HeroiService heroiSrv = new ResistenciaBR.Services.HeroiService();
+                                    <td bgcolor="@heroiSrv.BgRaridade(Model.Where(m => m.Nome == "Obi-Wan Kenobi (Old Ben)").FirstOrDefault())">@Model.Where(m => m.Nome == "Obi-Wan Kenobi (Old Ben)").FirstOrDefault().Raridade</td>
+                                    <td bgcolor="@heroiSrv.BgEquipamento(Model.Where(m => m.Nome == "Obi-Wan Kenobi (Old Ben)").FirstOrDefault())">@Model.Where(m => m.Nome == "Obi-Wan Kenobi (Old Ben)").FirstOrDefault().Equipamento</td>
+                                    <td bgcolor="@heroiSrv.BgNivel(Model.Where(m => m.Nome == "Obi-Wan Kenobi (Old Ben)").FirstOrDefault())">@Model.Where(m => m.Nome == "Obi-Wan Kenobi (Old Ben)").FirstOrDefault().Nivel</td>}
+                                else
+                                {
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                }
+                            </tr>
+                            <tr>
+                                <td>Plo Koon</td>
+                                @if (@Model.Where(m => m.Nome == "Plo Koon").Count() > 0)
+                                {
+                                    ResistenciaBR.Services.HeroiService heroiSrv = new ResistenciaBR.Services.HeroiService();
+                                    <td bgcolor="@heroiSrv.BgRaridade(Model.Where(m => m.Nome == "Plo Koon").FirstOrDefault())">@Model.Where(m => m.Nome == "Plo Koon").FirstOrDefault().Raridade</td>
+                                    <td bgcolor="@heroiSrv.BgEquipamento(Model.Where(m => m.Nome == "Plo Koon").FirstOrDefault())">@Model.Where(m => m.Nome == "Plo Koon").FirstOrDefault().Equipamento</td>
+                                    <td bgcolor="@heroiSrv.BgNivel(Model.Where(m => m.Nome == "Plo Koon").FirstOrDefault())">@Model.Where(m => m.Nome == "Plo Koon").FirstOrDefault().Nivel</td>}
+                                else
+                                {
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                }
+                            </tr>
+                            <tr>
+                                <td>Qui-Gon Jinn</td>
+                                @if (@Model.Where(m => m.Nome == "Qui-Gon Jinn").Count() > 0)
+                                {
+                                    ResistenciaBR.Services.HeroiService heroiSrv = new ResistenciaBR.Services.HeroiService();
+                                    <td bgcolor="@heroiSrv.BgRaridade(Model.Where(m => m.Nome == "Qui-Gon Jinn").FirstOrDefault())">@Model.Where(m => m.Nome == "Qui-Gon Jinn").FirstOrDefault().Raridade</td>
+                                    <td bgcolor="@heroiSrv.BgEquipamento(Model.Where(m => m.Nome == "Qui-Gon Jinn").FirstOrDefault())">@Model.Where(m => m.Nome == "Qui-Gon Jinn").FirstOrDefault().Equipamento</td>
+                                    <td bgcolor="@heroiSrv.BgNivel(Model.Where(m => m.Nome == "Qui-Gon Jinn").FirstOrDefault())">@Model.Where(m => m.Nome == "Qui-Gon Jinn").FirstOrDefault().Nivel</td>}
+                                else
+                                {
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                    <td bgcolor="FF0000">0</td>
+                                }
+                            </tr>
+                        </table>
+                    </p>
+                    @Html.Partial("_LegandaPartial")
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+</section>
+
+
+@*<!-- Event -->
+    <section id="event2" class="bg-dark-gray">
+        <div class="container">
+
+            <div class="row event">
+                <div class="col-md-12 col-sm-12 event-summary">
+                    <h1 class="section-bar">EMPEROR'S DEMISE</h1>
+
+                    <h4 class="section-bar2">Rarity 5*-7* | Gear 7-9 | level 85</h4>
+                </div>
+            </div>
+
+            <div class="row event">
+                <div class="col-md-4 col-sm-12 portfolio-item">
+                    <img src="img/palp.jpg" />
+                    <h4 class="section-bar">EMPEROR PALPATINE</h4>
+                    <p style="background-color:red"></p>
+                </div>
+
+
+
+                <div class="col-md-8 col-sm-12 portfolio-item">
+                    <div class="portfolio-caption">
+
+                        <p id="analysis" class="text-muted">
+                            <h4>REBELS</h4>
+
+                            <table class="table raidtable rancorraid" align="center">
+                                <tr>
+                                    <td>Name</td>
+                                    <td>*</td>
+                                    <td>G</td>
+                                    <td>L</td>
+                                </tr>
+                                <tr>
+                                    <td>Admiral Ackbar</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Ahsoka Tano (Fulcrum)</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Baze Malbus</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Biggs Darklighter</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Bistan</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Bodhi Rook</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Captain Han Solo</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Cassian Andor</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Bodhi Rook</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Chirrut Îmwe</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Chopper</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Commander Luke Skywalker</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Ezra Bridger</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Garazeb "Zeb" Orrelios</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Han Solo</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Hera Syndulla</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Hoth Rebel Scout</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Hoth Rebel Soldier</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Jyn Erso</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>K-2SO</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Kanan Jarrus</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Lando Calrissian</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Lobot</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Luke Skywalker (Farmboy)</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Obi-Wan Kenobi (Old Ben)</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Pao</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Princess Leia</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>R2-D2</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Rebel Officer Leia Organa</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Sabine Wren</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Scarif Rebel Pathfinder</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Stormtrooper Han</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Wedge Antilles</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                            </table>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+    </section>
+
+
+
+    <!-- Event -->
+    <section id="event4" class="bg-dark-gray">
+        <div class="container">
+
+            <div class="row event">
+                <div class="col-md-12 col-sm-12 event-summary">
+                    <h1 class="section-bar">PIECES & PLANS</h1>
+
+                    <h4 class="section-bar2">Rarity 7* | Gear 7-9 | level 85</h4>
+                </div>
+            </div>
+
+            <div class="row event">
+                <div class="col-md-4 col-sm-12 portfolio-item">
+                    <img src="img/bb8.jpg" />
+                    <h4 class="section-bar">BB-8</h4>
+                    <p style="background-color:red"></p>
+                </div>
+
+
+
+                <div class="col-md-8 col-sm-12 portfolio-item">
+                    <div class="portfolio-caption">
+
+                        <p id="analysis" class="text-muted">
+                            <h4>FIRST ORDER</h4>
+
+                            <table class="table raidtable rancorraid" align="center">
+                                <tr>
+                                    <td>Name</td>
+                                    <td>*</td>
+                                    <td>G</td>
+                                    <td>L</td>
+                                </tr>
+                                <tr>
+                                    <td>Captain Phasma</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>First Order Officer</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>First Order Stormtrooper</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>First Order TIE Pilot</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Kylo Ren</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>First Order Executioner</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Kylo Ren (Unmasked)</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>First Order SF TIE Pilot</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                            </table>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+    </section>
+
+    <!-- Event -->
+    <section id="event5" class="bg-alt-gray">
+        <div class="container">
+
+            <div class="row event">
+                <div class="col-md-12 col-sm-12 event-summary">
+                    <h1 class="section-bar">DARING DROID</h1>
+
+                    <h4 class="section-bar2">Rarity 7* | Gear 8-9 | level 80</h4>
+                </div>
+            </div>
+
+            <div class="row event">
+                <div class="col-md-4 col-sm-12 portfolio-item">
+                    <img src="img/r2.jpg" />
+                    <h4 class="section-bar">R2-D2</h4>
+                    <p style="background-color:red"></p>
+                </div>
+
+
+
+                <div class="col-md-8 col-sm-12 portfolio-item">
+                    <div class="portfolio-caption">
+
+                        <p id="analysis" class="text-muted">
+                            <h4>EMPIRE</h4>
+
+                            <table class="table raidtable rancorraid" align="center">
+                                <tr>
+                                    <td>Name</td>
+                                    <td>*</td>
+                                    <td>G</td>
+                                    <td>L</td>
+                                </tr>
+                                <tr>
+                                    <td>Darth Vader</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Death Trooper</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Director Krennic</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Emperor Palpatine</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Gar Saxon</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>General Veers</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Grand Admiral Thrawn</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Grand Moff Tarkin</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Imperial Super Commando</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Magmatrooper</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Royal Guard</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Shoretrooper</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Snowtrooper</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Stormtrooper</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>TIE Fighter Pilot</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                            </table>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+    </section>
+
+    <!-- Event -->
+    <section id="event6" class="bg-dark-gray">
+        <div class="container">
+
+            <div class="row event">
+                <div class="col-md-12 col-sm-12 event-summary">
+                    <h1 class="section-bar">LUKE SKYWALKER HERO'S JOURNEY</h1>
+
+                    <h4 class="section-bar2">Rarity 7* | Gear 7-9 | level 85</h4>
+                </div>
+            </div>
+
+            <div class="row event">
+                <div class="col-md-4 col-sm-12 portfolio-item">
+                    <img src="img/cls.jpg" />
+                    <h4 class="section-bar">COMMANDER LUKE SKYWALKER</h4>
+                    <p style="background-color:red"></p>
+                </div>
+
+
+
+                <div class="col-md-8 col-sm-12 portfolio-item">
+                    <div class="portfolio-caption">
+
+                        <p id="analysis" class="text-muted">
+                            <h4>REBELS</h4>
+
+                            <table class="table raidtable rancorraid" align="center">
+                                <tr>
+                                    <td>Name</td>
+                                    <td>*</td>
+                                    <td>G</td>
+                                    <td>L</td>
+                                </tr>
+                                <tr>
+                                    <td>Luke Skywalker (Farmboy)</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Princess Leia</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>R2-D2</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Stormtrooper Han</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Obi-Wan Kenobi (Old Ben)</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+
+                            </table>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+    </section>
+
+
+    <!-- Event -->
+    <section id="event7" class="bg-alt-gray">
+        <div class="container">
+
+            <div class="row event">
+                <div class="col-md-12 col-sm-12 event-summary">
+                    <h1 class="section-bar">REY'S HERO'S JOURNEY</h1>
+
+                    <h4 class="section-bar2">Rarity 7* | Gear 7-9 | level 85</h4>
+                </div>
+            </div>
+
+            <div class="row event">
+                <div class="col-md-4 col-sm-12 portfolio-item">
+                    <img src="img/rjt.jpg" />
+                    <h4 class="section-bar">Rey (Jedi Training)</h4>
+                    <p style="background-color:red"></p>
+                </div>
+
+
+
+                <div class="col-md-8 col-sm-12 portfolio-item">
+                    <div class="portfolio-caption">
+
+                        <p id="analysis" class="text-muted">
+                            <h4>FORCE AWAKENS SQUAD</h4>
+
+                            <table class="table raidtable rancorraid" align="center">
+                                <tr>
+                                    <td>Name</td>
+                                    <td>*</td>
+                                    <td>G</td>
+                                    <td>L</td>
+                                </tr>
+                                <tr>
+                                    <td>Rey (Scavenger)</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Finn</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>BB-8</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Veteran Smuggler Han Solo</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+                                <tr>
+                                    <td>Veteran Smuggler Chewbacca</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                </tr>
+
+                            </table>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+    </section>*@
+
+

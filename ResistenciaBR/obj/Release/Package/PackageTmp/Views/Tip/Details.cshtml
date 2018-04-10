@@ -1,0 +1,63 @@
+﻿@model ResistenciaBR.Models.Tip
+
+@{
+    ViewBag.Title = "Detalhes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<html>
+<head>
+    <style>
+        .multiline {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Detalhes</h2>
+
+    <div>
+        <h4>Dica</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Categoria)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Categoria)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Titulo)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Titulo)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Texto)
+            </dt>
+
+            <dd>
+                @Html.Raw(Model.Texto.Replace(Environment.NewLine, "<br/>"))
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Autor)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Autor)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @*@Html.ActionLink("Editar", "Edit", new { id = Model.Codigo }) |*@
+        @Html.ActionLink("Voltar para a lista", "Index")
+    </p>
+    </body>
+</html>
