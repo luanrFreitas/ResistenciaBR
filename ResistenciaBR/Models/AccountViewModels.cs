@@ -63,27 +63,27 @@ namespace ResistenciaBR.Models
 
     public class RegisterViewModel
     {
-        [Required]
+        [Required(ErrorMessage = "O campo {0} é obrigatório")]
         [Display(Name = "Usuário")]
         public string UserName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "O campo {0} é obrigatório")]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "O campo {0} é obrigatório")]
         [Phone]
-        [Display(Name = "Whatsapp")]
+        [Display(Name = " Número do Whatsapp")]
         public string PhoneNumber { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "O campo {0} é obrigatório")]
         [StringLength(100, ErrorMessage = "A {0} Deve ter o tamanho mínimo de {2} caracteres.", MinimumLength = 4)]
         [DataType(DataType.Password)]
         [Display(Name = "Senha")]
         public string Password { get; set; }
 
-        [DataType(DataType.Password)]
+        [Required(ErrorMessage = "O campo {0} é obrigatório")]
         [Display(Name = "Confirmar senha")]
         [Compare("Password", ErrorMessage = "As senhas digitadas não são iguais.")]
         public string ConfirmPassword { get; set; }
